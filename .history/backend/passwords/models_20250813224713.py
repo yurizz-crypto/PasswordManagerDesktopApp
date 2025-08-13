@@ -8,11 +8,4 @@ class PasswordEntry(models.Model):
     username = models.CharField(max_length=255)
     encrypted_password = models.TextField()
     notes = models.TextField(blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-    class Meta:
-        ordering = ['site_name']
-
-    def __str__(self):
-        return f"{self.site_name} - {self.username}"
+    created_at = models.DateTimeField(Au)

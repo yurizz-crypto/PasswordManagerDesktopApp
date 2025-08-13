@@ -14,5 +14,4 @@ class PasswordEntry(models.Model):
     class Meta:
         ordering = ['site_name']
 
-    def __str__(self):
-        return f"{self.site_name} - {self.username}"
+        

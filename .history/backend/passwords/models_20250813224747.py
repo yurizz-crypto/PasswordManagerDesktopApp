@@ -12,7 +12,4 @@ class PasswordEntry(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['site_name']
-
-    def __str__(self):
-        return f"{self.site_name} - {self.username}"
+        ordering = []
